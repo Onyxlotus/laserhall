@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("./header.css");
+@import url("./section-1.css");
+
+:root{
+    --black: #151516;
+    --gray: #474B52;
+    --blue: #427CDE;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    color: var(--black);
+    font-style: normal;
+}
+
+.wrapper{
+    width: 80rem;
+}

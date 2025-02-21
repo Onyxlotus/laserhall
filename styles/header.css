@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1.75rem;
+}
+
+.nav-list-item{
+    list-style: none;
+}
+
+.nav-list-item a{
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 300;
+}
+
+.contacts-block{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    justify-content: center;
+    align-items: end;
+    font-style: normal;
+}
+
+.contacts p{
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.contacts a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.call{
+    color: var(--blue);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--blue);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.125rem 0.875rem 1.125rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
