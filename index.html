@@ -26,7 +26,7 @@
                     <p>+7 831 435-13-22</p>
                     <a href="mailto:zakaz@laserhall.org">zakaz@laserhall.org</a>
                 </address>
-                <button class="call">Заказать звонок</button>
+                <button class="openModal call">Заказать звонок</button>
             </div>
         </header>
         <section class="section-1">
@@ -37,26 +37,80 @@
                         <p>500+ позиций товаров для разных бизнес-задач с изготовлением от 7 дней и возможностью постоплаты</p>
                     </div>
                     <div class="buttons">
-                        <button class="consult">Получить консультацию</button>
-                        <button class="presentation">Скачать презентацию</button>                        
+                        <button class="openModal consult">Получить консультацию</button>
+                        <a class="presentation" href="" target="_blank">Скачать презентацию</a>                       
                     </div>
 
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <img src="./image/Frame.svg" class="close" width="20px" height="20px">
+                        <div class="modal-text">
+                            <div class="phone-call-container">
+                                <img src="./image/phone-call.svg" class="phone-call" width="32px" height="32px">                            
+                            </div>
+                            <h2>Укажите ваши актуальные данные</h2>
+                            <h3>и мы свяжемся с вами в течение 15 минут</h3>
+                        </div>
+                        <div class="modal-inputs">
+                            <input class="modal-input" type="text" class="input" placeholder="Ваше имя">
+                            <input class="modal-input" type="text" class="input" placeholder="Телефон / WhatsApp / Telegram">
+                        </div>
+                        <button class="btn">Оставить заявку</button>
+                    </div>
+                </div>
+                <div id="modal-Thanks" class="modal-Thanks">
+                    <div class="modal-content-Thanks">
+                        <img src="./image/Frame.svg" class="close" width="20px" height="20px">
+                        <div class="modal-text-Thanks">
+                            <div class="smile-container-Thanks">
+                                <img src="./image/smile.svg" class="smile-Thanks" width="32px" height="32px">                            
+                            </div>
+                            <h2>Спасибо</h2>
+                            <h3>ваша заявка отправлена!</h3>
+                        </div>
+                        <div class="modal-w8-Thanks">
+                            <div class="text-w8-Thanks">
+                                <h5>Долго ждать?</h5>
+                                <p>Наберите нас прямо сейчас</p>
+                            </div>
+                            <h3 class="phone-w8-Thanks">+7 831 435-13-22</h3>
+                        </div>
+                        <div class="modal-messenger-Thanks">
+                            <p>Или добавляйтесь в мессенджеры</p>
+                            <div class="messengers-block-Thanks">
+                                <div class="messenger-telegram-Thanks">
+                                    <img src="./image/telegram.svg" alt="Telegram" width="20px" height="20px" class="telegram">
+                                </div>
+                                <div class="messenger-whatsapp-Thanks">
+                                    <img src="./image/whatsapp.svg" alt="WhatsApp" width="20px" height="20px" class="whatsapp">
+                                </div>
+                                <div class="messenger-vk-Thanks">
+                                    <img src="./image/vk.svg" alt="VK" width="40px" height="40px" class="vk">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
                 <ul class="advantages">
                     <div class="inline-block">
-                        <li>Оптовые заказы от 30 000 ₽</li>
+                        <img src="./image/boxes.svg" width="32px" height="32px">
+                        <li id="wholesale">Оптовые заказы<br>от 30 000 ₽</li>
                     </div>
                     <div class="inline-block">
-                        <li>Бесплатная доставка по городу</li>
+                        <img src="./image/location.svg" width="32px" height="32px">
+                        <li id="delivery">Бесплатная<br>доставка по городу</li>
                     </div>
                     <div class="inline-block">
-                        <li>Сопровождение менеджера</li>
+                        <img src="./image/messages.svg" width="32px" height="32px">
+                        <li id="accompaniment">Сопровождение<br>менеджера</li>
                     </div>
                     <div class="inline-block">
-                        <li>Шоурум с образцами</li>
+                        <img src="./image/eye.svg" width="32px" height="32px">
+                        <li id="showroom">Шоурум<br>с образцами</li>
                     </div>
-                </ul>  
+                </ul> 
         </section>
         <footer>
             <div class="container-1">
@@ -86,5 +140,7 @@
 
         </footer>
     </div>
+    <script src="./scripts/modalFeedback.js"></script>
+    <script src="./scripts/modal2Feedback.js"></script>
 </body>
 </html>

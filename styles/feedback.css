@@ -1,0 +1,237 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 3.75rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 2rem #0616312E;
+    text-align: center;
+    position: relative;
+    gap: 2rem;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.phone-call-container{
+    width: 56px;
+    height: 56px;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    background-color: var(--blue);
+}
+
+.modal-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.modal-text h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.modal-text h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.modal-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal-input{
+    padding: 1rem;
+    border: 1px solid #474B5233;
+    border-radius: 0.75rem;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: var(--gray);
+    opacity: 0.5;
+    width: 288px;
+}
+
+.modal-input:placeholder-shown{
+    text-overflow: ellipsis;
+}
+
+.btn{
+    border: none;
+    border-radius: 0.75rem;
+    background-color: var(--blue);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 1.125rem 1.5rem;
+    cursor: pointer;
+}
+
+.modal-Thanks {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-Thanks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 3.75rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 2rem #0616312E;
+    text-align: center;
+    position: relative;
+    gap: 0.625rem;
+}
+
+.modal-text-Thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.smile-container-Thanks{
+    width: 56px;
+    height: 56px;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    background-color: var(--blue);
+}
+
+.modal-text-Thanks h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.modal-text-Thanks h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.modal-w8-Thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.text-w8-Thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.125rem;
+}
+
+.text-w8-Thanks h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.text-w8-Thanks p{
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: var(--gray);
+}
+
+.phone-w8-Thanks{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.modal-messenger-Thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-messenger-Thanks p{
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: var(--gray);
+}
+
+.messengers-block-Thanks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.messenger-telegram-Thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding-right: 2px;
+    border-radius: 0.3125rem;
+    background-color: #0088CC;
+}
+
+.messenger-whatsapp-Thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.3125rem;
+    background-color: #25D366;
+}
+
+.messenger-vk-Thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.3125rem;
+    background-color: #0077FF;
+}
