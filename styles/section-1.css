@@ -40,11 +40,18 @@
     color: #fff;
 }
 
+.content h2 br{
+    display: none;
+}
+
 .content p{
     font-weight: 300;
     font-size: 1.125rem;
     color: rgba(255, 255, 255, 0.8);
-    padding-right: 4.375rem;
+}
+
+.content p .small-br{
+    display: none;
 }
 
 .content .buttons{
@@ -52,7 +59,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .consult{
@@ -66,6 +73,12 @@
     border-radius: 0.75rem;
     border: 1px solid var(--blue);
     cursor: pointer;
+    transition: 0.25s;
+}
+
+.consult:hover{
+    background-color: #4341e2;
+    border-color: #4341e2;
 }
 
 .presentation{
@@ -85,6 +98,12 @@
     border: 1px solid #fff;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.25s;
+}
+
+.presentation:hover{
+    color: #8f8f8f;
+    border-color: #8f8f8f;
 }
 
 .presentation::before{
@@ -107,7 +126,7 @@
     align-items: center;
     gap: 0.75rem;
     padding: 1rem 1.25rem;
-    border-radius: 16px;
+    border-radius: 1rem;
     box-shadow: 0 0 12px #0616310F;
     width: 25%;
 }
@@ -119,3 +138,75 @@
     list-style: none;
 }
 
+@media (max-width: 1280px){
+    .content{
+        gap: 1.25rem;
+        margin: 1.25rem;
+        width: 88%;
+    }
+
+    .content h2{
+        font-size: 1.75rem;
+    }
+
+    .content h2 br{
+        display: inline;
+    }
+    
+    .content p{
+        font-size: 1rem;
+    }
+
+    .content p .big-br{
+        display: none;
+    }
+
+    .content p .small-br{
+        display: inline;
+    }
+    
+    .content .buttons{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .consult{
+        font-size: 1rem;
+        padding: 1rem 1.375rem;
+        min-width: 100%;
+    }
+    
+    .presentation{
+        font-size: 1rem;
+        padding: 1rem 1.125rem;
+        min-width: 100%;
+    }
+
+    .advantages{
+        flex-direction: column;
+        align-items: start;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .advantages br{
+        display: none;
+    }
+    
+    .inline-block{
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.75rem;
+        width: 100%;
+    }
+
+    .inline-block img{
+        width: 28px;
+        height: 28px;
+    }
+    
+    .inline-block li{
+        font-size: 1rem;
+    }
+}

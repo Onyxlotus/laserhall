@@ -1,0 +1,191 @@
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 7.5rem;
+    gap: 2rem;
+}
+
+.section-2 h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 19rem;
+    height: 326px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    
+}
+
+.slide:nth-child(1){
+    background: url("./../image/slide1.png"),
+    linear-gradient(#7DE19E, #5DA676);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(2){
+    background: url("./../image/slide2.png"),
+    linear-gradient(#B58CFB, #58319B);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(3){
+    background: url("./../image/slide3.png"),
+    linear-gradient(#EE9471, #B64B3D);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(4){
+    background: url("./../image/slide4.png"),
+    linear-gradient(#EFD12D, #D09322);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(5){
+    background: url("./../image/slide5.png"),
+    linear-gradient(#7F7FF5, #3B3BA3);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(6){
+    background: url("./../image/slide6.png"),
+    linear-gradient(#D8E762, #92A028);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(7){
+    background: url("./../image/slide7.png"),
+    linear-gradient(#D8D8D8, #9C9C9C);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide h5{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.slide button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.125rem 0.825rem 1.125rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+    color: var(--blue);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.slide button:hover{
+    border: 2px solid var(--blue);
+}
+
+.slide button::before{
+    content: url("./../image/shop.svg");
+}
+
+.buttons-slider {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: 96.5%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+
+.buttons-slider button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 0.825rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.buttons-slider button:hover{
+    border: 1px solid var(--blue);
+}
+
+.buttons-slider button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#prev{
+    rotate: 180deg;
+}
+
+@media (max-width: 1280px){
+    .section-2{
+        margin-top: 6.25rem;
+    }
+    .section-2 h2{
+        font-size: 1.5rem;
+    }
+    
+    .slider {
+        gap: 0.75rem;
+    }
+    .slide {
+        min-width: 16.25rem;
+        height: 276px;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+        border-radius: 1rem;
+        
+    }
+    
+    .slide h5{
+        font-size: 1.125rem;
+    }
+    
+    .buttons-slider {
+        width: 90%;
+    }
+}

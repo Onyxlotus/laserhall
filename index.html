@@ -9,32 +9,48 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <img src="./image/g12.svg" alt="label" class="label" width="116px" height="40px">
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="">Акции</a></li>
-                    <li class="nav-list-item"><a href="">Каталог</a></li>
-                    <li class="nav-list-item"><a href="">Этапы оформления</a></li>
-                    <li class="nav-list-item"><a href="">Преимущества</a></li>
-                    <li class="nav-list-item"><a href="">О нас</a></li>
-                    <li class="nav-list-item"><a href="">FAQ</a></li>
-                    <li class="nav-list-item"><a href="">Отзывы</a></li>
+            <div class="main-header">
+                <img src="./image/g12.svg" alt="label" class="label" width="116px" height="40px">
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="">Акции</a></li>
+                        <li class="nav-list-item"><a href="">Каталог</a></li>
+                        <li class="nav-list-item"><a href="">Этапы оформления</a></li>
+                        <li class="nav-list-item"><a href="">Преимущества</a></li>
+                        <li class="nav-list-item"><a href="">О нас</a></li>
+                        <li class="nav-list-item"><a href="">FAQ</a></li>
+                        <li class="nav-list-item"><a href="">Отзывы</a></li>
+                    </ul>
+                </nav>
+                <div class="contacts-block">
+                    <address class="contacts">
+                        <p>+7 831 435-13-22</p>
+                        <a href="mailto:zakaz@laserhall.org">zakaz@laserhall.org</a>
+                    </address>
+                    <button class="openModal call">Заказать звонок</button>
+                </div>
+                <button id="openMenu" class="openMenu"><img src="./image/menu.svg"></button>
+                <button id="closeMenu" class="closeMenu"><img src="./image/x.svg"></button>
+            </div>
+            <nav id="open-nav-list" class="open-nav-list">
+                <ul class="nav-list-menu">
+                    <li class="nav-list-item-menu"><a href="">Акции</a></li>
+                    <li class="nav-list-item-menu"><a href="">Каталог</a></li>
+                    <li class="nav-list-item-menu"><a href="">Этапы оформления</a></li>
+                    <li class="nav-list-item-menu"><a href="">Преимущества</a></li>
+                    <li class="nav-list-item-menu"><a href="">О нас</a></li>
+                    <li class="nav-list-item-menu"><a href="">FAQ</a></li>
+                    <li class="nav-list-item-menu"><a href="">Отзывы</a></li>
+                    <li class="nav-list-item-menu"><button class="openModal call-menu">Заказать звонок</button></li>
                 </ul>
             </nav>
-            <div class="contacts-block">
-                <address class="contacts">
-                    <p>+7 831 435-13-22</p>
-                    <a href="mailto:zakaz@laserhall.org">zakaz@laserhall.org</a>
-                </address>
-                <button class="openModal call">Заказать звонок</button>
-            </div>
         </header>
         <section class="section-1">
             <div class="container">
                 <div class="content">
                     <div class="text-content">
-                        <h2>Корпоративные подарки и мерч с логотипом вашей компании</h2>
-                        <p>500+ позиций товаров для разных бизнес-задач с изготовлением от 7 дней и возможностью постоплаты</p>
+                        <h2>Корпоративные подарки и мерч<br> с логотипом<br> вашей компании</h2>
+                        <p>500+ позиций товаров для разных<br class="small-br"> бизнес-задач с изготовлением<br class="big-br"> от 7<br class="small-br"> дней и возможностью постоплаты</p>
                     </div>
                     <div class="buttons">
                         <button class="openModal consult">Получить консультацию</button>
@@ -96,27 +112,72 @@
                 <ul class="advantages">
                     <div class="inline-block">
                         <img src="./image/boxes.svg" width="32px" height="32px">
-                        <li id="wholesale">Оптовые заказы<br>от 30 000 ₽</li>
+                        <li id="wholesale">Оптовые заказы<br> от 30 000 ₽</li>
                     </div>
                     <div class="inline-block">
                         <img src="./image/location.svg" width="32px" height="32px">
-                        <li id="delivery">Бесплатная<br>доставка по городу</li>
+                        <li id="delivery">Бесплатная<br> доставка по городу</li>
                     </div>
                     <div class="inline-block">
                         <img src="./image/messages.svg" width="32px" height="32px">
-                        <li id="accompaniment">Сопровождение<br>менеджера</li>
+                        <li id="accompaniment">Сопровождение<br> менеджера</li>
                     </div>
                     <div class="inline-block">
                         <img src="./image/eye.svg" width="32px" height="32px">
-                        <li id="showroom">Шоурум<br>с образцами</li>
+                        <li id="showroom">Шоурум<br> с образцами</li>
                     </div>
                 </ul> 
+        </section>
+        <section class="section-2">
+            <h2>Топ-7 популярных бизнес-сувениров</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <h5>Кружки</h5>
+                        <button>Заказать</button>
+                    </div>
+                    <div class="slide">
+                        <h5>Бутылка для воды</h5>
+                        <button>Заказать</button>
+                    </div>
+                    <div class="slide">
+                        <h5>Ежедневники</h5>
+                        <button>Заказать</button>
+                    </div>
+                    <div class="slide">
+                        <h5>Толстовки</h5>
+                        <button>Заказать</button>
+                    </div>
+                    <div class="slide">
+                        <h5>Шопперы</h5>
+                        <button>Заказать</button>
+                    </div>
+                    <div class="slide">
+                        <h5>Пауэрбанк</h5>
+                        <button>Заказать</button>
+                    </div>
+                    <div class="slide">
+                        <h5>Футболки</h5>
+                        <button>Заказать</button>
+                    </div>
+                </div>
+                <div class="buttons-slider">
+                    <button id="prev" class="disabled"><img src="./image/arrow.svg"></button>
+                    <button id="next"><img src="./image/arrow.svg"></button>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="container-1">
                 <img src="./image/g12.svg" alt="label" class="label" width="200px" height="69px">
+                <address class="contacts">
+                    <p>+7 831 435-13-22</p>
+                    <a href="mailto:zakaz@laserhall.org">zakaz@laserhall.org</a>
+                </address>
+            </div>
+            <div class="footer-list">
                 <ul class="AKE">
-                    <li><a href="#"> Акции</a></li>
+                    <li><a href="#">Акции</a></li>
                     <li><a href="#">Каталог</a></li>
                     <li><a href="#">Этапы оформления</a></li>
                 </ul>
@@ -127,11 +188,7 @@
                 <ul class="FO">
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Отзывы</a></li>
-                </ul>
-                <address class="contacts">
-                    <p>+7 831 435-13-22</p>
-                    <a href="mailto:zakaz@laserhall.org">zakaz@laserhall.org</a>
-                </address>
+                </ul>                
             </div>
             <div class="container-2">
                 <a href="#">Политика конфиденциальности</a>
@@ -142,5 +199,7 @@
     </div>
     <script src="./scripts/modalFeedback.js"></script>
     <script src="./scripts/modal2Feedback.js"></script>
+    <script src="./scripts/modal3Menu.js"></script>
+    <script src="./scripts/slider.js"></script>
 </body>
 </html>
